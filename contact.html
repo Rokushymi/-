@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контактна форма</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Ігор Пилипчак</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="portfolio.html">Портфоліо</a>
+      <a href="contact.html" class="active">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Зв’яжіться зі мною</h2>
+    <form id="contactForm" action="https://getform.io/f/bnlnvvjb" method="POST">
+  <label>Ім’я</label>
+  <input type="text" name="name" required>
+
+  <label>Email</label>
+  <input type="email" name="email" required>
+
+  <label>Яка послуга цікавить</label>
+  <input type="text" name="service" required>
+
+  <label>Опис потрібної послуги</label>
+  <textarea name="description" rows="5" required></textarea>
+
+  <div class="form-buttons">
+    <button type="submit" class="btn primary">Відправити</button>
+    <button type="reset" class="btn secondary">Очистити</button>
+  </div>
+</form>
+<p id="formMessage" style="text-align:center; margin-top:15px; color:#ff004f;"></p>
+
+
+    <p class="telegram">Також можна написати в Telegram: <a href="#">@Rokushymi</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Веброзробка — навчальний проєкт</p>
+  </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
